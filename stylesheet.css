@@ -1,22 +1,111 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #FFF; 
+    /*display: flex;
+    flex-flow: column wrap;
+    justify-content: center;*/
+    
+}
+#container{
+    width: 100%;
+    max-width: 1200px;
 }
 
 /*HEADER*/
 
-header{
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    width: auto;
+nav ul {
+	display: flex;
 }
 
-nav li{
-    margin: 20px;
+nav li {
+	list-style: none;
+	padding-left: 30px;
+}
+
+/*BANDEAU*/
+
+#bandeau{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    background-image: url(images/backgroung_image.jpg);
+}
+
+#bandeau img{
+    max-width: 20%;
+    height: auto;
+}
+
+#bandeau h1{
+    color: #FFF;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/*INFORMATIONS DETAILS*/
+#explications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+    padding-top: 30px;
+}
+.pres{
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    color:rgb(87,87,87);
+    font-weight: normal;
+}
+#skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#skills article{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+#skills h2{
+    font-size: 1.4em;
+}
+
+#skills p{
+    font-size: 0.8em;
+}
+
+.citation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.citation h2{
+    color: rgb(87,87,87);
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 30px;
+}
+.citation h3{
+    color: rgb(87,87,87);
+    font-weight: 400;
 }
